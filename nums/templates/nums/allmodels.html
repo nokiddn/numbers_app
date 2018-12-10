@@ -1,0 +1,9 @@
+{% if models %}
+    <ul>
+	        {% for model in models %}
+		<li><a href="{% url 'nums:viewmodel' model.pk %}">{{ model.name }}</a></li>
+			    {% endfor %}
+			        </ul>
+				{% else %}
+				    <p>No models are available.</p>
+				    {% endif %}

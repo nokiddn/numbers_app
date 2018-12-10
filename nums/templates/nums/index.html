@@ -1,0 +1,9 @@
+{% if model %}
+    <b>Report of model {{ model.name }}:</b>
+    <ul>
+	    <li>Accuracy: {{ model.accuracy }}</li>
+	    <li>Train time: {{ model.time_estimated }}</li>
+    </ul>
+{% else %}
+    	<p>No models are available.</p>
+{% endif %}
